@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/aditional.css" rel="stylesheet">
 
   </head>
 
@@ -59,14 +60,14 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/testes.jpg')">
+    <header class="masthead" style="background-image: url('img/contato.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-11 col-md-10 mx-auto">
             <div class="page-heading">
-              <h1>Testes de Proficiência</h1>
-              <span class="subheading">Meça seus conhecimentos sobre as ciências existentes dentro do ambiente de Libras</span>
+              <h1>Contato</h1>
+              <span class="subheading">Deixe sua mensagem para os desenvolvedores</span>
             </div>
           </div>
         </div>
@@ -76,20 +77,59 @@
     <!-- Main Content -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-11 col-md-10 mx-auto">
-            <div class="col-lg-11 col-md-10 mx-auto"><center>
-                <style type="text/css">
-                    img{padding: 15px;}
-                </style>
-                <a href="teste_bio.html"><img src="img/biologicas2.jpg" class="rounded-circle" width="25%" height="25%"></a>
-                <a href="teste_exatas.html"><img src="img/exatas2.jpg" class="rounded-circle" width="25%" height="25%"></a>
-                <a href="teste_humanas.html"><img src="img/humanas2.jpg" class="rounded-circle" width="25%" height="25%"></a>
-            </center></div>
-        </div>
+       <div class="col-lg-11 col-md-10 mx-auto">
+        <div class="container_textarea">
+         <form action="action_page.php">
+
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" name="firstname" placeholder="Digite seu nome completo...">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email...">
+
+            <label for="country">Estado</label>
+            <select id="country" name="country">
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espírito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paraíba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+            </select>
+
+            <label for="subject">Mensagem</label>
+            <textarea id="subject" name="subject" placeholder="Deixe sua opinião, crítica ou mudança..." style="height:200px"></textarea>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+       </div> 
+       </div>
       </div>
     </div>
+
     <hr>
-    <!-- Main Content -->
 
     <!-- Footer -->
     <footer>
